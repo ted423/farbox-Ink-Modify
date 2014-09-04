@@ -1,9 +1,7 @@
 /* Code.css
 --------------------------------------------------*/
 
-ul{
-margin: 0.3em 0px 0px 1.6em;
-}
+
 blockquote {
     border-left: 0.4em solid #DDD;
     color: #777;
@@ -33,15 +31,24 @@ b, strong {
 color:inherit!important;
 }
 
+h1{
+    font-size:25px;
+}
+h2{
+    font-size:20px;
+}
 h3 {
-    font-size: 1.5em;
+    font-size: 15px;
     margin: 1em 0 0.5em;
     border-bottom: 1px solid #eee;
 }
 
-
+ul,ol,dt{
+    font-size: 14px;
+}
 
 th, td {
+    font-size: 14px;
     border-left: 1px solid #dddddd;
     vertical-align: middle;
     border-top: 1px solid #dddddd;
@@ -192,6 +199,11 @@ table.codehilitetable{
     line-height: 1.6;
     font-size: 0.85em !important;
 }
+
+.site_name{
+    font-family:"Microsoft JhengHei","Microsoft YaHei",微软雅黑;
+}
+
 img {
     vertical-align: middle;
 }

@@ -5,9 +5,7 @@ $bg-color: #f6f6f6;
 $font-color: #333;
 $sidebar-width: 20%;
 $font-family: "Microsoft YaHei","Microsoft Jhenghei","Hiragino Sans GB",Verdana,STSong,Simsun,Arial,Helvetica Neue,Helvetica,sans-serif;
-h1{
-font-size:25px;
-}
+
 .default-transition {
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
@@ -308,6 +306,7 @@ background:none!important;
                 width: 100%;
                 display: block;
                 color:#343f47;
+                font-weight:normal;
                 padding: 0 0.5em;
                 @extend .default-transition;
 
@@ -338,7 +337,6 @@ background:none!important;
         }
 
         h1, h2 {
-            font-weight: normal;
             line-height: 1.25;
             margin: .5em 0 .2em
         }

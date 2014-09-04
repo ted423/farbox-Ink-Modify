@@ -11,7 +11,7 @@ html(lang="zh-cn")
 		load("pure, jquery#1.10.2, /template/css/basic.css, /template/css/style.scss")
 
 		if not has('favicon.icon')
-			link(rel="shortcut icon", href="/template/favicon.ico")
+			link(rel="shortcut icon", href="/favicon.ico")
 
 		title
 			block title
@@ -24,8 +24,7 @@ html(lang="zh-cn")
 					a(href="/")
 						img.logo(src="{{site.avatar}}?width=240&height=240&fixed=true", alt=site.title, title="返回首页")
 				h1.site_name
-					a(href="/")
-						img(src='', alt=site.title)
+					a(href="/") {{ site.title }}
 				#switch
 					img(src="/template/img/menu.png", alt="menu icon")
 				ul.nav
@@ -37,8 +36,6 @@ html(lang="zh-cn")
 					li#sub= a_with_selected('/feed', '订阅')
 					li#search
 						a(href="#") 搜索
-					li#btt
-						a(href="#main")
 				.search-bar
 					input#search-bar(type='text', value=request.args.s, onkeyup="if (event.keyCode == 13) search();")
 					a(href="javascript:search()")
