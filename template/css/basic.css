@@ -1,7 +1,5 @@
 /* Code.css
 --------------------------------------------------*/
-
-
 blockquote {
     border-left: 0.4em solid #DDD;
     color: #777;
@@ -31,28 +29,20 @@ b, strong {
 color:inherit!important;
 }
 
-h1{
-    font-size:25px;
-}
-h2{
-    font-size:20px;
-}
 h3 {
-    font-size: 15px;
+    font-size: 1.5em;
     margin: 1em 0 0.5em;
     border-bottom: 1px solid #eee;
 }
 
-ul,ol,dt{
-    font-size: 14px;
-}
+
 
 th, td {
-    font-size: 14px;
     border-left: 1px solid #dddddd;
+    padding: 8px;
+    line-height: 1.8;
     vertical-align: middle;
     border-top: 1px solid #dddddd;
-    padding: 5px;
 }
 th {
 	text-align:center;
@@ -101,6 +91,7 @@ pre code{
 	font-size: 100%;
 }
 p {
+
 	word-wrap: break-word;
 }
 
@@ -182,35 +173,3 @@ table.codehilitetable{
 .vg { color: #bb60d5 } /* Name.Variable.Global */
 .vi { color: #bb60d5 } /* Name.Variable.Instance */
 .il { color: #40a070 } /* Literal.Number.Integer.Long */
-	
-.infobox {
-    border: 1px solid #AAA;
-    background-color: #F9F9F9;
-    color: #000;
-    margin-bottom: 0.5em;
-    margin-left: 1em;
-    padding: 0.2em;
-    float: right;
-    clear: right;
-}
-	
-.infobox.bordered {
-    border-collapse: collapse;
-    line-height: 1.6;
-    font-size: 0.85em !important;
-}
-
-.site_name{
-    font-family:"Microsoft JhengHei","Microsoft YaHei",微软雅黑;
-}
-
-img {
-    vertical-align: middle;
-}
-.infobox.bordered td, .infobox.bordered th {
-    border: 1px solid #AAA;
-}
-dt {
-    font-weight: bold;
-    margin-bottom: 0.1em;
-}

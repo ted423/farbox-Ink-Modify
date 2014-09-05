@@ -3,8 +3,11 @@ $nav-button-size: 50px;
 $content-high-color: #e9302a;
 $bg-color: #f6f6f6;
 $font-color: #333;
-$sidebar-width: 20%;
+$sidebar-width: 27%;
 $font-family: "Microsoft YaHei","Microsoft Jhenghei","Hiragino Sans GB",Verdana,STSong,Simsun,Arial,Helvetica Neue,Helvetica,sans-serif;
+
+
+
 
 .default-transition {
     -webkit-transition: 0.25s;
@@ -14,7 +17,8 @@ $font-family: "Microsoft YaHei","Microsoft Jhenghei","Hiragino Sans GB",Verdana,
 }
 
 body {
-    font-family: $font-family;
+    font:  400 16px/1.62 'PT Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+    line-height: 1.9;
     -webkit-text-size-adjust: none;
     margin: 0 auto;
     background: $bg-color;
@@ -50,9 +54,7 @@ a {
         background: rgba(255,255,255,0.8);
     }
 }
-.pure-u{
-    position: fixed;
-}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -78,17 +80,29 @@ a {
 
         img.logo {
            border-radius: 50%;
+
         }
     }
 
-
+    .site_name{
+        a:hover {
+            img{
+                box-shadow: rgba(100, 100, 100, 0.15) 0px 0px 30px;
+            }
+        }
+    }
 
     h1 {
         margin: 0;
         text-align: center;
-        text-transform: uppercase;
+        font-family: 'adelle', 'Georgia', "Kaiti SC", "KaiTi", serif;
+
         a {
             display: block;
+            color: #555;
+            &:hover{
+                color: #111;
+            }
         }
     }
 
@@ -102,68 +116,25 @@ a {
 
         li {
             float: none;
-            text-indent:-9999px;
 
             a {
                 height: 50px;
                 border-radius: 5px;
-                font-size: 12px;
-                font-family: Arial;
-                color: #666;
+                font-size: 18px;
+                line-height: 50px;
+                color: #333;
                 display: block;
-                background:url('/template/img/sprite.png') no-repeat;
+                font-family: 'adelle', 'Georgia', "Kaiti SC", "KaiTi", serif;
+
+                &:hover, &.selected{
+                    background: url(/template/img/hover.png) no-repeat center center;
+                    color: #ffffff;
+                }
             }
 
         }
 
-        #about a{
-            background-position: center -61px;
-            &:hover, &.selected {
-                background-position: center -361px;
-            }
-        }
 
-        #archive a{
-            background-position: center -111px;
-            &:hover, &.selected {
-                background-position: center -411px;
-            }
-        }
-
-        #category a{
-            background-position: center -162px;
-            &:hover, &.selected {
-                background-position: center -461px;
-            }
-        }
-
-        #sub a{
-            background-position: center -210px;
-            &:hover, &.selected {
-                background-position: center -510px;
-            }
-        }
-
-        #search a{
-            background-position: center -260px;
-            &:hover, &.selected {
-                background-position: center -560px;
-            }
-        }
-
-        #btt a{
-            background-position: center -310px;
-            &:hover, &.selected {
-                background-position: center -610px;
-            }
-        }
-
-        #tags a{
-            background-position: center -660px;
-            &:hover, &.selected {
-                background-position: center -708px;
-            }
-        }
     }
 
     .search-bar {
@@ -218,8 +189,8 @@ background:none!important;
     .list_with_title {
         font-family: 'Microsoft Jhenghei', 'Microsoft Yahei';
         padding: 0;
-        margin: 0 auto;
-        font-size: 1.5em;
+        margin: -30px auto 0 auto;
+
 
         li {
             list-style-type: none;
@@ -231,6 +202,7 @@ background:none!important;
             line-height: 2.2em;
             font-size: 1.4em;
             text-align: center;
+            margin-top: 35px;
             border-bottom: 1px dotted #ddd;
         }
 
@@ -239,13 +211,13 @@ background:none!important;
             padding: 0;
 
             li {
+                font-size: 18px;
                 line-height: 1.6em;
                 border-bottom: 1px dotted #ddd;
                 position: relative;
-                padding: 0;
+                padding: 0.5em 0;
                 text-align: left;
                 font-weight: normal;
-                *font-size: 16px;
             }
 
             .listing-item{
@@ -291,7 +263,19 @@ background:none!important;
 
     }
 
+    .posts{
+        margin-top: -0.7em;
+        .post{
+            padding: 0.7em 0;
+            .title{
+                font-size: 1.3em;
+            }
+
+        }
+    }
+
     .post {
+        line-height: 1.8;
         font-size: 1em;
         border-top: 1px dotted #ddd;
 
@@ -306,7 +290,6 @@ background:none!important;
                 width: 100%;
                 display: block;
                 color:#343f47;
-                font-weight:normal;
                 padding: 0 0.5em;
                 @extend .default-transition;
 
@@ -332,11 +315,16 @@ background:none!important;
             }
         }
 
+        ul p, ol p{
+            overflow: visible;
+        }
+
         p {
             margin-bottom: 1em;
         }
 
         h1, h2 {
+            font-weight: normal;
             line-height: 1.25;
             margin: .5em 0 .2em
         }
@@ -375,7 +363,7 @@ background:none!important;
                 margin-right: .1em;
             }
 
-            .tags, .visitors, .source, .permalink, .ds-thread-count {
+            .tags, .visitors, .source, .ds-thread-count {
                 display: inline-block;
                 margin: 0 .1em;
             }
@@ -442,7 +430,7 @@ background:none!important;
             float: left;
             position: relative;
             margin: 2.5%;
-            width: 15%;
+            width: 20%;
 
             h3 {
                 font-size: 1.3em;
