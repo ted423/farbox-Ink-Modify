@@ -16,6 +16,7 @@ table {
     border: 1px solid #dddddd;
     border-left: 0;
     margin: 1em 0;
+    font-size: 14px;
 
 }
 
@@ -29,18 +30,10 @@ b, strong {
 color:inherit!important;
 }
 
-h3 {
-    font-size: 1.5em;
-    margin: 1em 0 0.5em;
-    border-bottom: 1px solid #eee;
-}
-
-
-
 th, td {
     border-left: 1px solid #dddddd;
-    padding: 8px;
-    line-height: 1.8;
+    padding: 5px;
+    line-height: 1.4;
     vertical-align: middle;
     border-top: 1px solid #dddddd;
 }
@@ -173,3 +166,11 @@ table.codehilitetable{
 .vg { color: #bb60d5 } /* Name.Variable.Global */
 .vi { color: #bb60d5 } /* Name.Variable.Instance */
 .il { color: #40a070 } /* Literal.Number.Integer.Long */
+
+dl, menu, ol, ul{
+    margin:0px;
+}
+
+.infobox.bordered{
+    font-size: 11px;
+}
