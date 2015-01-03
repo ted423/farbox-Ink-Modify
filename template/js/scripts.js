@@ -28,12 +28,16 @@ $(document).ready(function () {
         $("#switch").toggleClass("switch_current");
     });
     $(window).resize(function () {
-        if ($(window).width() > 768)
+        if ($(window).width() > 768){
             $(".nav").show();
+            $("#more").show();
+        }
     });
     $(window).resize(function () {
-        if ($(window).width() < 768)
+        if ($(window).width() < 768){
             $(".nav").hide();
+            $("#more").hide();
+        }
     });
 });
 

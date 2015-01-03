@@ -43,14 +43,19 @@ html(lang="zh-cn")
 						img(src="/template/img/search.png", alt="search icon")
 
 			.content_body.pure-u-1
+				#headbar
+					
 				#main
 					block content
 				#footer
 					| Powered by
 					a(href='http://www.farbox.com') FarBox
 					| . &#169;2012-2015 Z.R.E.Y Inc. Theme
-					a(href="") Ink
+					a Ink
 					|  designed by
 					a(href='http://cyanchen.com/') Cyan Chen
 					|.
+					br
+					span= "友情链接:"
+					a(href="")= "友情链接"
 		load("/template/js/scripts.js")
