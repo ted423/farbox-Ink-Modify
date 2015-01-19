@@ -13,6 +13,9 @@ html(lang="zh-cn")
 		if not has('favicon.icon')
 			link(rel="shortcut icon", href="/template/favicon.ico")
 
+		if 'webscan.360' in request.path
+			+raise_404()
+
 		title
 			block title
 				site.title
