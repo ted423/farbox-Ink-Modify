@@ -17,7 +17,7 @@ $font-family: "Microsoft YaHei","Microsoft Jhenghei","Hiragino Sans GB",Verdana,
 }
 
 body {
-    font:  400 16px/1.62 'PT Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+    font-family: "Microsoft YaHei","Microsoft Jhenghei","Hiragino Sans GB",Verdana,STSong,Simsun,Arial,Helvetica Neue,Helvetica,sans-serif;
     line-height: 1.9;
     -webkit-text-size-adjust: none;
     margin: 0 auto;
@@ -283,7 +283,6 @@ background:none!important;
         .title {
             font-size: 1.8em;
             color:#343f47;
-            font-family:'Microsoft Jhenghei';
             border-left: 3px solid $content-high-color;
             margin-bottom: .2em;
 

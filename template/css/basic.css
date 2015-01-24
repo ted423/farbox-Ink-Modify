@@ -20,6 +20,19 @@ table {
 
 }
 
+h1{
+	font-size: 24px;
+}
+
+h2{
+	font-size: 21px;
+}
+
+h1,h2{
+    font-family: Comic Sans MS,"Microsoft YaHei", Verdana, Aril, sans-serif;
+    font-weight: 600;
+}
+
 hr {
     margin: 1em 0;
     border-top: 1px dotted #ddd;
@@ -202,9 +215,6 @@ dl, menu, ol, ul{
     position: relative;
     vertical-align: top;
     display: inline-block;
-}
-.dropdown,.dropdown-menu{
-    display:none;
 }
 
 .toc ul{
