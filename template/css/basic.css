@@ -20,17 +20,29 @@ table {
 
 }
 
-h1{
+td ul{
+    padding-left: 30px;
+}
+
+.post_body h1{
 	font-size: 24px;
 }
 
-h2{
+.post_body h2{
 	font-size: 21px;
+    margin-left: 10px !important;
 }
 
-h1,h2{
-    font-family: Comic Sans MS,"Microsoft YaHei", Verdana, Aril, sans-serif;
-    font-weight: 600;
+.post_body h3{
+	font-size: 18px;
+    margin-left: 20px;
+}
+
+.post_body h1,h2,h3,h4{
+    font-family: Comic Sans MS,"Microsoft Jhenghei";
+    border-left:2px solid  #777;
+    font-weight:normal;
+    padding-left: 5px;
 }
 
 hr {
@@ -186,7 +198,9 @@ dl, menu, ol, ul{
 }
 .infobox {
     border: 1px solid #AAA;
+    width: 22em;
     background-color: #F9F9F9;
+    text-align: left;
     color: #000;
     margin: 0.5em 0px 0.5em 1em;
     padding: 0.2em;
@@ -227,6 +241,12 @@ dl, menu, ol, ul{
     padding-bottom: 0px;
 }
 
+#hide{
+	color:white;
+	text-shadow:none;
+}
+
+#hide a{color: #FFF !important;}
 /*Lrc-Parser*/
 
 .out pre{
