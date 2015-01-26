@@ -25,20 +25,20 @@ td ul{
 }
 
 .post_body h1{
-	font-size: 24px;
+    font-size: 24px;
 }
 
 .post_body h2{
-	font-size: 21px;
+    font-size: 21px;
     margin-left: 10px !important;
 }
 
 .post_body h3{
-	font-size: 18px;
+    font-size: 18px;
     margin-left: 20px;
 }
 
-.post_body h1,h2,h3,h4{
+.post_body h1,.post_body h2,.post_body h3,.post_body h4{
     font-family: Comic Sans MS,"Microsoft Jhenghei";
     border-left:2px solid  #777;
     font-weight:normal;
@@ -63,7 +63,7 @@ th, td {
     border-top: 1px solid #dddddd;
 }
 th {
-	text-align:center;
+    text-align:center;
 }
 .p_part {
     margin: 15px 0;
@@ -74,9 +74,9 @@ code{
     padding: 0 5px;
     margin: 0;
     font-family: consolas,Courier,monospace,serif;
-	font-size: 90%;
-	white-space: pre-wrap;
-	word-wrap: break-word;
+    font-size: 90%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 pre{
     border: 1px solid #e0e0e0;
@@ -87,7 +87,7 @@ pre{
     overflow: auto;
     background: #F8F8F8;
     letter-spacing: 0;
-	font-size: 90%;
+    font-size: 90%;
 }
 
 pre p {
@@ -103,11 +103,11 @@ pre code{
     background: none;
     padding: 0;
     margin: 0;
-	font-size: 100%;
+    font-size: 100%;
 }
 p {
 
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .p {
@@ -232,8 +232,8 @@ dl, menu, ol, ul{
 }
 
 .toc ul{
-	padding-top: 10px;
-	padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .toc ul ul{
     padding-left: 25px !important;
@@ -242,27 +242,27 @@ dl, menu, ol, ul{
 }
 
 #hide{
-	color:white;
-	text-shadow:none;
+    color:white;
+    text-shadow:none;
 }
 
 #hide a{color: #FFF !important;}
 /*Lrc-Parser*/
 
 .out pre{
-	border-radius: 10px;
-	text-align:center;
-	background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.8);
-	font-size:1.5em;
-	display: table !important;
-	margin: 0 auto;
-	vertical-align: middle;
+    border-radius: 10px;
+    text-align:center;
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.8);
+    font-size:1.5em;
+    display: table !important;
+    margin: 0 auto;
+    vertical-align: middle;
 }
 #progressBar{
-	border-radius: 10px;
-	position: absolute;
-	background:#3BB4F2;
-	opacity:0.2; 
-	box-shadow: 10px 10px 5px #888888;
+    border-radius: 10px;
+    position: absolute;
+    background:#3BB4F2;
+    opacity:0.2; 
+    box-shadow: 10px 10px 5px #888888;
 }
 
