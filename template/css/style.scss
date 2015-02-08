@@ -96,7 +96,7 @@ a {
     h1 {
         margin: 0;
         text-align: center;
-        font-family: 'adelle', 'Georgia', "Kaiti SC", "KaiTi", serif;
+        font-family: 'Comic Sans MS','adelle', 'Georgia', "Kaiti SC", "KaiTi", serif;
 
         a {
             display: block;
@@ -282,7 +282,7 @@ background:none!important;
 
         .title {
             font-size: 1.8em;
-            color:#343f47;
+            color:#555;
             border-left: 3px solid $content-high-color;
             margin-bottom: .2em;
 
@@ -322,6 +322,7 @@ background:none!important;
         }
 
         h1, h2 {
+            font-family: Comic Sans MS,"Microsoft Jhenghei";
             font-weight: normal;
             line-height: 1.25;
             margin: .5em 0 .2em
@@ -331,7 +332,7 @@ background:none!important;
         .info {
             font-family: "Microsoft YaHei", "Microsoft Jhenghei", "Hiragino Sans GB", Verdana, STSong, Simsun, Arial, Helvetica Neue, Helvetica, sans-serif;
             color: #aaaaaa;
-            font-size: 1em;
+            font-size: 14px;
             position: relative;
             text-align: left;
             margin: .5em 0 .8em;
@@ -339,7 +340,7 @@ background:none!important;
             padding: 0 1.2em;
 
             a {
-                font-size: 1em;
+                font-size: 14px;
                 padding: 2px;
                 @extend .default-transition;
             ;
@@ -476,11 +477,8 @@ background:none!important;
 .toc {
     line-height: 1.7;
     border: 1px solid #eee;
-    li {
-        ul {
-            margin: 0.45em 0;
-        }
-    }
+    font-size:14px;
+    margin-bottom:20px;
 }
 
 .post-images {
