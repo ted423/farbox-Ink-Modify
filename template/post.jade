@@ -29,7 +29,7 @@ block content
 
 			 |
 			span.source
-				a(href="?action=show_raw", target="_blank")= '源码' if lang=='zh_cn' else 'Text'
+				a(href="javascript:;",onclick="javascript:window.open(window.location.href+'?action=show_raw', '_blank')")= '源码' if lang=='zh_cn' else 'Text'
 
 		.post_body= post.content
 
