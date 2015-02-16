@@ -29,8 +29,8 @@ block content
 
 			 |
 			span.source
-				a(href="javascript:;",onclick="javascript:window.open(window.location.href+'?action=show_raw', '_blank')")= '源码' if lang=='zh_cn' else 'Text'
-
+				a(style="cursor:pointer;",onclick="javascript:window.open(window.location.href+'?action=show_raw', '_blank')")= '源码' if lang=='zh_cn' else 'Source'
+				load("/template/js/source.js")
 		.post_body= post.content
 
 
