@@ -57,3 +57,25 @@ $(function () {
         }
     });
 });
+
+//code add button
+$(function () {
+    var code = document.getElementsByTagName('code');
+    [].forEach.call(code,function(unit){
+        var btn = document.createElement("span");
+        btn.className = 'select-btn'
+        btn.textContent='select';
+        btn.onclick = function(){
+            var target =this.nextSibling;
+            var range = document.createRange();
+            var startOffset = 0;
+            range.setStart(target,startOffset);
+            range.setEnd(target,1);
+            var copy=window.getSelection();
+            copy.addRange(range);
+        }
+        unit.parentNode.insertBefore(btn,unit);
+    })
+});
+
+
