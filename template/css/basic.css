@@ -1,27 +1,27 @@
 /* Code.css
 --------------------------------------------------*/
 blockquote {
-    border-left: 0.4em solid #DDD;
-    color: #777;
-    display: block;
-    text-align: justify;
-    border-left: 4px solid #eeeeee;
-    margin: 1em 0;
-    padding-left: 1.5em;
+	border-left: 0.4em solid #DDD;
+	color: #777;
+	display: block;
+	text-align: justify;
+	border-left: 4px solid #eeeeee;
+	margin: 1em 0;
+	padding-left: 1.5em;
 }
 table {
-    background-color: transparent;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 1px solid #dddddd;
-    border-left: 0;
-    margin: 1em 0;
-    font-size: 14px;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #dddddd;
+	border-left: 0;
+	margin: 1em 0;
+	font-size: 13px;
 
 }
 
 td ul{
-    padding-left: 30px;
+	padding-left: 20px;
 }
 
 .post_body h1{
@@ -30,102 +30,108 @@ td ul{
 
 .post_body h2{
 	font-size: 21px;
-    margin-left: 15px !important;
+	margin-left: 15px !important;
 }
 
 .post_body h3{
 	font-size: 18px;
-    margin-left: 30px;
+	margin-left: 30px;
 }
 
 .post_body h1,.post_body h2,.post_body h3,.post_body h4{
-    font-family: Comic Sans MS,"Microsoft Jhenghei";
-    border-left:2px solid  #777;
-    font-weight:normal;
-    padding-left: 5px;
+	font-family: Comic Sans MS,"Microsoft Jhenghei";
+	border-left:2px solid  #777;
+	font-weight:normal;
+	padding-left: 5px;
+}
+
+.post_body:not(toc) a{
+	display:block;
 }
 
 hr {
-    margin: 1em 0;
-    border-top: 1px dotted #ddd;
-    border-bottom: 0px dashed #fff;
+	margin: 1em 0;
+	border-top: 1px dotted #ddd;
+	border-bottom: 0px dashed #fff;
 }
 
 b, strong {
-color:inherit!important;
+	color:inherit!important;
+	padding-left:2px;
+	padding-right:2px;
 }
 
 th, td {
-    border-left: 1px solid #dddddd;
-    padding: 5px;
-    line-height: 1.4;
-    vertical-align: middle;
-    border-top: 1px solid #dddddd;
+	border-left: 1px solid #dddddd;
+	padding: 5px;
+	line-height: 1.4;
+	vertical-align: middle;
+	border-top: 1px solid #dddddd;
 }
 th {
 	text-align:center;
 }
 .p_part {
-    margin: 15px 0;
+	margin: 15px 0;
 }
 code{
-    border: 1px solid #e0e0e0;
-    background: #F8F8F8;
-    padding: 0 5px;
-    margin: 0;
-    font-family: consolas,Courier,monospace,serif;
+	border: 1px solid #e0e0e0;
+	background: #F8F8F8;
+	padding: 0 5px;
+	margin: 0;
+	font-family: consolas,Courier,monospace,serif;
 	font-size: 90%;
 	white-space: pre-wrap;
 	word-wrap: break-word;
 }
 pre{
-    border: 1px solid #e0e0e0;
-    padding: 5px 15px;
-    font-family: consolas,Courier,monospace,serif;
-    line-height: 1.5em;
-    display: block;
-    overflow: auto;
-    background: #F8F8F8;
-    letter-spacing: 0;
+	border: 1px solid #e0e0e0;
+	padding: 5px 15px;
+	font-family: consolas,Courier,monospace,serif;
+	line-height: 1.5em;
+	display: block;
+	overflow: auto;
+	background: #F8F8F8;
+	letter-spacing: 0;
 	font-size: 90%;
 }
 
 pre p {
-    margin: 0;
+	margin: 0;
 }
 
 pre br{
-    display: none;
+	display: none;
 }
 
 pre code{
-    border:none;
-    background: none;
-    padding: 0;
-    margin: 0;
+	border:none;
+	background: none;
+	padding: 0;
+	margin: 0;
 	font-size: 100%;
 }
 p {
-    margin-bottom: 0px !important;
-    margin-top: 0px;
+	margin-bottom: 0px !important;
+	margin-top: 0px;
 	word-wrap: break-word;
 }
 
 .p {
-    margin-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 /*pygments*/
 
 table.codehilitetable{
-    border:none;
-    margin: 0;
+	border:none;
+	margin: 0;
 }
 
 
 .codehilitetable td{
-    border: none;
-    padding: 0;
+	border: none;
+	padding: 0;
 
 }
 
@@ -192,49 +198,46 @@ table.codehilitetable{
 .il { color: #40a070 } /* Literal.Number.Integer.Long */
 
 dl, menu, ol, ul{
-    margin:0px;
+	margin:0px;
 }
 
 menu, ol, ul {
-    padding: 0px 0px 0px 30px;
+	padding: 0px 0px 0px 30px;
 }
 
-.infobox.bordered{
-    font-size: 11px;
-}
 .infobox {
-    border: 1px solid #AAA;
-    width: 22em;
-    background-color: #F9F9F9;
-    text-align: left;
-    color: #000;
-    margin: 0.5em 0px 0.5em 1em;
-    padding: 0.2em;
-    float: right;
-    clear: right;
-    text-align: left;
-    font-size: 88%;
-    line-height: 1.5em;
+	border: 1px solid #AAA;
+	width: 22em;
+	background-color: #F9F9F9;
+	text-align: left;
+	color: #000;
+	margin: 0.5em 0px 0.5em 1em;
+	padding: 0.2em;
+	float: right;
+	clear: right;
+	text-align: left;
+	line-height: 1.5em;
+	font-size: 12px;
 }
 
 .infobox.bordered td, .infobox.bordered th {
-    border: 1px solid #AAA;
+	border: 1px solid #AAA;
 }
 
 #headbar {
-    border-bottom: 1px dotted #DDD;
-    padding-left: 10px;
+	border-bottom: 1px dotted #DDD;
+	padding-left: 10px;
 }
 .baro, .bar {
-    display: block;
-    list-style: none outside none;
-    margin: 0px;
-    padding: 0px;
+	display: block;
+	list-style: none outside none;
+	margin: 0px;
+	padding: 0px;
 }
 .bar {
-    position: relative;
-    vertical-align: top;
-    display: inline-block;
+	position: relative;
+	vertical-align: top;
+	display: inline-block;
 }
 
 .toc ul{
@@ -242,9 +245,9 @@ menu, ol, ul {
 	padding-bottom: 10px;
 }
 .toc ul ul{
-    padding-left: 25px !important;
-    padding-top: 0px;
-    padding-bottom: 0px;
+	padding-left: 25px !important;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 #hide{
@@ -273,5 +276,13 @@ menu, ol, ul {
 }
 
 .wikitable{
-    font-size: 13px;
+	font-size: 13px;
+}
+
+.select-btn{
+	font-size:10px;
+	position:absolute;
+	right:63px;
+	border: 1px #000;
+	border-style: ridge;
 }

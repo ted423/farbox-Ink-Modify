@@ -39,7 +39,9 @@ b, strong {
 a {
     text-decoration: none;
     color: $content-high-color;
-
+    white-space:nowrap;/*设置不折行*/
+	text-overflow:ellipsis;/*这就是省略号喽*/
+	overflow: hidden;/*设置超过的隐藏*/
     &:hover, &:focus {
         color: $content-high-color;
     }
@@ -47,7 +49,7 @@ a {
 
 /* LAYOUT CSS */
 #layout {
-    padding-left: $sidebar-width; /* "left col (nav + list)" width */
+    padding-left: 25%; /* "left col (nav + list)" width */
     position: relative;
     background: url('/template/img/bg.jpg') no-repeat fixed;
 
